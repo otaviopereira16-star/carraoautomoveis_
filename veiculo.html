@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Veiculo - Carrao Automoveis</title>
+</head>
+<body>
+    <header class="header">
+        <section>
+            <a href="index.html#home" class="logo">
+                <img src="img/Design sem nome (21).png" alt="logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html#home">home</a>
+                <a href="index.html#destaques">destaques</a>
+                <a href="estoque.html">catalogo</a>
+                <a href="index.html#about">sobre</a>
+                <a href="index.html#address">endereco</a>
+            </nav>
+
+            <div class="icons">
+                <button class="favorites-header-button" id="favorites-button" type="button" aria-label="Abrir favoritos">★</button>
+                <img id="menu-icon" width="32" height="32" src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="menu">
+            </div>
+        </section>
+    </header>
+
+    <main class="vehicle-page">
+        <section class="vehicle-detail" id="vehicle-detail">
+            <a href="index.html#catalogo" class="back-link">Voltar ao catalogo</a>
+
+            <div class="vehicle-layout">
+                <div class="vehicle-gallery">
+                    <div class="vehicle-main-image">
+                        <button class="vehicle-arrow vehicle-prev" type="button">&#10094;</button>
+                        <img id="vehicle-image" src="" alt="Foto do veiculo">
+                        <button class="vehicle-arrow vehicle-next" type="button">&#10095;</button>
+                    </div>
+                    <div class="vehicle-thumbs" id="vehicle-thumbs"></div>
+                </div>
+
+                <aside class="vehicle-summary">
+                    <span class="vehicle-label">Disponivel na Carrao Automoveis</span>
+                    <h1 id="vehicle-name"></h1>
+                    <p id="vehicle-details"></p>
+                    <strong id="vehicle-price"></strong>
+                    <button class="favorite-button" id="favorite-button" type="button" aria-pressed="false">
+                        <span class="favorite-icon">☆</span>
+                        <span class="favorite-text">Salvar veiculo</span>
+                    </button>
+                    <a id="vehicle-whatsapp" href="#" target="_blank" class="btn">Conversar com o vendedor</a>
+                </aside>
+            </div>
+
+            <div class="vehicle-info-grid">
+                <article class="vehicle-panel">
+                    <h2>Descricao</h2>
+                    <p id="vehicle-description"></p>
+                </article>
+
+                <article class="vehicle-panel">
+                    <h2>Informacoes</h2>
+                    <div class="vehicle-specs" id="vehicle-specs"></div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 <span>Carrao Automoveis</span> - Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="favorites-modal" id="favorites-modal">
+        <div class="favorites-box">
+            <button class="favorites-close" type="button">x</button>
+            <h2>Favoritos</h2>
+            <div class="favorites-list" id="favorites-list"></div>
+        </div>
+    </div>
+
+    <script src="veiculo.js"></script>
+</body>
+</html>

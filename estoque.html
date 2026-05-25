@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Catálogo - Carrão Automóveis</title>
+</head>
+<body>
+    <header class="header">
+        <section>
+            <a href="index.html#home" class="logo">
+                <img src="img/Design sem nome (21).png" alt="logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html#home">home</a>
+                <a href="estoque.html">catalogo</a>
+                <a href="index.html#about">sobre</a>
+                <a href="index.html#address">endereco</a>
+            </nav>
+
+            <div class="icons">
+                <button class="favorites-header-button" id="favorites-button" type="button" aria-label="Abrir favoritos">★</button>
+                <img id="menu-icon" width="32" height="32" src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="menu">
+            </div>
+        </section>
+    </header>
+
+    <main class="stock-page">
+        <section class="stock-hero">
+            <div>
+                <span>Catalogo atualizado</span>
+                <h1>Veículos disponíveis</h1>
+            </div>
+            <p>Confira os veículos da Carrão Automóveis e abra o anúncio completo para ver fotos, descrição e contato.</p>
+        </section>
+
+        <section class="stock-tools">
+            <input type="search" id="stock-search" placeholder="Pesquisar por modelo">
+            <select id="stock-filter" aria-label="Filtrar estoque">
+                <option value="todos">Todos</option>
+                <option value="carro">Carros</option>
+                <option value="moto">Motos</option>
+                <option value="nautico">Náutico</option>
+                <option value="disponivel">Disponíveis</option>
+                <option value="vendido">Vendidos</option>
+            </select>
+        </section>
+
+        <section class="stock-grid" id="stock-grid"></section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 <span>Carrão Automóveis</span> - Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="favorites-modal" id="favorites-modal">
+        <div class="favorites-box">
+            <button class="favorites-close" type="button">x</button>
+            <h2>Favoritos</h2>
+            <div class="favorites-list" id="favorites-list"></div>
+        </div>
+    </div>
+
+    <script src="estoque.js"></script>
+</body>
+</html>
